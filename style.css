@@ -1,0 +1,176 @@
+/* 
+-------
+Common
+-------
+ */
+body {
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0;
+    background: #D8B4E2;
+}
+header {
+    color: #210B2C;
+    font-family: "Main";
+}
+a {
+    text-decoration: none;
+    color: #D8B4E2;
+    box-sizing: border-box;
+    padding: 5px;
+}    
+header h1 {
+    margin: 0;
+    color: #D8B4E2;
+    background: #210B2C;
+    border: 0px solid #D8B4E2;
+    padding: 5px;
+}
+/* 
+---------------
+Imported Fonts
+---------------
+ */
+@font-face {
+    font-family: "Font" ;
+    src: url(./assets/authentic_sheldon/Authentic\ Sheldon.ttf);
+}
+@font-face {
+    font-family: "Font2" ;
+    src: url(./assets/champagne_2/Champagne.ttf);
+}
+@font-face {
+    font-family: "Font3" ;
+    src: url(./assets/chicken_crispy/Chicken\ Cripsy.ttf);
+}
+@font-face {
+    font-family: "Font4" ;
+    src: url(./assets/nice_dream_2/Nice\ Dream.ttf);
+}
+@font-face {
+    font-family: "Font5" ;
+    src: url(./assets/spiritual_mountain/Spiritual\ Mountain.ttf);
+}
+@font-face {
+    font-family: "Main" ;
+    src: url(./assets/Ubuntu/Ubuntu-Medium.ttf);
+}
+/* 
+---------
+Buttons
+---------
+ */
+form {
+    margin-top: 0;
+}
+form div {
+    background: #210B2C;
+}
+div {
+    text-align: center;
+}
+input  {
+    display: inline;
+}
+input[type=radio] {
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    margin: 0 5vw;
+}
+#big {
+    position:relative;
+}
+/* 
+---------------------------
+Things not to be displayed
+---------------------------
+ */
+#firstsee {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    /* background: white; */
+    color: #D8B4E2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+#output {
+    display: none;
+    z-index: -1;
+    position: absolute;
+}
+#output2 {
+    display: none;
+    z-index: -2;
+    position: absolute;
+}
+#output3 {
+    display: none;
+    z-index: -3;
+    position: absolute;
+}
+#output4 {
+    display: none;
+    z-index: -4;
+    position: absolute;
+}
+#output5 {
+    display: none;
+    z-index: -5;
+    position: absolute;
+}
+/* 
+---------------------
+The Button Mechanism
+---------------------
+ */
+#btn:checked ~ #firstsee {
+    display: none;
+    color: #D8B4E2;
+    z-index: 100;
+    position: absolute;
+}
+#btn:checked ~ #output {
+    display: block;
+    color: #D8B4E2;
+    z-index: 100;
+    position: absolute;
+    font-family: "Font";
+    font-size: 37px;
+}
+#btn2:checked ~ #output2 {
+    display: block;
+    color: #D8B4E2;
+    z-index: 100;
+    position: absolute;
+    font-family: "Font2";
+    font-size: 34px;
+}
+#btn3:checked ~ #output3 {
+    display: block;
+    color: #D8B4E2;
+    z-index: 100;
+    position: absolute;
+    font-family: "Font3";
+    font-size: 25px;
+}
+#btn4:checked ~ #output4 {
+    display: block;
+    color: #D8B4E2;
+    z-index: 100;
+    position: absolute;
+    font-family: "Font4";
+    font-size: 37px;
+}
+#btn5:checked ~ #output5 {
+    display: block;
+    color: #D8B4E2;
+    z-index: 100;
+    position: absolute;
+    font-family: "Font5";
+    font-size: 37px;
+}
+/* What this code does is that it checks whether the relevant radio button is checked or not, and if it is checked then it will look for its sibling using "~" and apply the property:value to it under its selector. */
+/* --------- End --------- */
